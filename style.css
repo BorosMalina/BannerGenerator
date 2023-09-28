@@ -54,6 +54,22 @@ left: 1em;
 
 #InputEmoji {
 position:absolute;
-top: 9em;
+top: 7em;
 left: 1em;
+
+box-shadow:inset 0px 1px 0px 0px #ffffff;
+background:linear-gradient(to bottom, #ffffff 10%, #c9c9c9 100%);
+background-color:#f9f9f9;
+border-radius:38px;
+border:3px solid #929292;
+display:inline-block;
+cursor:pointer;
+color:#666666;
+font-family:Arial, Helvetica, sans-serif;
+font-size:18px;
+font-weight:bold;
+padding:10px 24px;
+text-decoration:none;
+text-shadow:0px 1px 0px #aaaaaa;
+
 }

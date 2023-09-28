@@ -1,5 +1,5 @@
 let myColor;
-let emojiInput = "🐔";
+let emojiInput = "👍";
 
 function setup() {
   createCanvas(1200, 460);
