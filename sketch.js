@@ -1,27 +1,42 @@
 let myColor;
+let emojiInput = "🐔";
 
-function setup () {
+function setup() {
   createCanvas(1200, 460);
-  background(255); 
+  background(255);
   myColor = color(random(255), random(255), random(255));
-  select('#changeBG').html(myColor.toString('#rrggbb'));
+  select("#changeBG").html(myColor.toString("#rrggbb"));
 }
 
-function changeBG () {
+function changeBG() {
   myColor = color(random(255), random(255), random(255));
-  select('#changeBG').style('color', myColor);
-  select('#changeBG').html(myColor.toString('#rrggbb'));
-  navigator.clipboard.writeText(myColor.toString('#rrggbb'));
+  select("#changeBG").style("color", myColor);
+  select("#changeBG").html(myColor.toString("#rrggbb"));
+  navigator.clipboard.writeText(myColor.toString("#rrggbb"));
 
   //alert('Color ' + myColor.toString('#rrggbb') + ' copied to clipboard!');
 }
 
-function saveImage(){
-  saveCanvas('myBanner', 'png');
+function saveImage() {
+  saveCanvas("my_custom_banner", "png");
 }
 
-function draw () {
+function draw() {
   // Background color is changed every button press
   background(myColor);
+  pattern();
+}
 
+function pattern() {
+  for (let catIndex = 0; catIndex < windowWidth / 100; catIndex++) {
+    for (let catRowIndex = 0; catRowIndex < 5; catRowIndex++) {
+      text(emojiInput, catIndex * 100 + 30, catRowIndex*100+40);
+      textSize(30);
+    }
+  }
+}
+
+function changePattern(){
+  emojiInput = select('#InputEmoji').value();
+  print(emojiInput);
 }
