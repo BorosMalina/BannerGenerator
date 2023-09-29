@@ -38,10 +38,14 @@ function pattern() {
 
 function changePattern(){
   emojiInput = select('#InputEmoji').value();
-  print(emojiInput);
+  //print(emojiInput);
 }
 
+
 function checkList(){
-  select("#divStuff").hide();
+ // select("#divStuff").hide();
   print('ok');
+  for (let indexBox = 0; indexBox < 10; indexBox++) {
+    createCheckbox("test", false);
+  }
 }
