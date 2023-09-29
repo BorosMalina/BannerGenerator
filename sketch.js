@@ -40,3 +40,8 @@ function changePattern(){
   emojiInput = select('#InputEmoji').value();
   print(emojiInput);
 }
+
+function checkList(){
+  select("#divStuff").hide();
+  print('ok');
+}
