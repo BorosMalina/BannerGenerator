@@ -73,3 +73,9 @@ text-decoration:none;
 text-shadow:0px 1px 0px #aaaaaa;
 
 }
+
+
+.cringe{
+	border-radius: 100%;
+	border: dashed blue 5px;
+}
